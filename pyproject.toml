@@ -10,7 +10,9 @@ dependencies = [
     "numpy>=2.3.0",
     "pandas>=2.3.0",
     "plotly>=6.1.2",
+    "psycopg2-binary>=2.9.10",
     "python-louvain>=0.16",
     "seaborn>=0.13.2",
+    "sqlalchemy>=2.0.41",
     "statsmodels>=0.14.4",
 ]
