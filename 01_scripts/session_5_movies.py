@@ -1,8 +1,7 @@
 # Imports
 import sys
 import pandas as pd
-print("pandas imported")
-import ast
+print("pandas imported")import ast
 print("ast imported")
 import networkx as nx
 print("networkx imported")
@@ -14,9 +13,11 @@ import matplotlib.pyplot as plt
 print("matplotlib imported")
 print("all imports ok")
 
+
 # Loading data
 meta = pd.read_csv("datasets/kaggle_movies/movies_metadata.csv", low_memory=False)
 credits = pd.read_csv("datasets/kaggle_movies/credits.csv", low_memory=False)
+
 
 # Keep only the columns we need from meta and cast the id to integer
 meta = meta[['id','title']].drop_duplicates().rename(columns={'id':'movie_id'})
